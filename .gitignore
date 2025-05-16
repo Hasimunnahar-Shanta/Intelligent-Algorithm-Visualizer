@@ -1,0 +1,58 @@
+# ============================
+# GitHub Pages Web Project
+# ============================
+
+# Node dependencies (if using npm or build tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+.cache/
+.tmp/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment variables (never push .env files!)
+.env
+.env.* 
+
+# Git backup files
+*.swp
+*.swo
+*.bak
+
+# Custom assets (optional)
+*.psd
+*.ai
+
+# Files to ignore from deployment but might be local
+*.local
+*.secret
+
+# Python (if you're using any scripts)
+__pycache__/
+*.py[cod]
+
+# Markdown preview or temp files
+*.md~ 
+
+# Static site generators (Jekyll/Hugo/Gatsby etc.)
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.cache-loader/
+public/

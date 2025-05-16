@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
+    <div id="navbar"></div> <!-- Navbar will be injected here -->
+
+    
+    <!-- Main Content 
+    <section class="main-content">
+      <h1>Visualize Algorithms Like Never Before</h1>
+    </section>
+    -->
+
+
+    <!-- Main Content -->
+<section class="main-content">
+  <h1>Visualize Algorithms Like Never Before</h1>
+  <div class="card-grid">
+    <a href="sorting/sorting.html" class="card">
+      <img src="assets/sorting.png" alt="Sorting Algorithms" />
+      <div class="card-title">Sorting</div>
+    </a>
+    <a href="searching/searching.html" class="card">
+      <img src="assets/searching.png" alt="Searching Algorithms" />
+      <div class="card-title">Searching</div>
+    </a>
+    <a href="graph/graph.html" class="card">
+      <img src="assets/graph.png" alt="Graph Algorithms" />
+      <div class="card-title">Graphs</div>
+    </a>
+    <a href="backtracking/backtracking.html" class="card">
+      <img src="assets/backtracking.png" alt="Backtracking" />
+      <div class="card-title">Backtracking</div>
+    </a>
+    <a href="a-star/a-star.html" class="card">
+      <img src="assets/pathfinding.png" alt="Dynamic Programming" />
+      <div class="card-title">Path Finding</div>
+    </a>
+    <a href="graph_coloring/graph_coloring.html" class="card">
+      <img src="assets/miscellaneous1.jpg" alt="AI Algorithms" />
+      <div class="card-title">Miscellaneous</div>
+    </a>
+  </div>
+</section>
+    <script src="index.js"></script>
+    <script>
+      // Pass session variable from Flask to JavaScript using a data attribute or inline script
+      const isLoggedIn = "{{ 'true' if session.get('user_id') else 'false' }}";
+       
+      fetch("../navbar.html") // Adjust path if needed
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("navbar").innerHTML = data;
+
+          const authButton = document.getElementById('authButton');
+          
+          if (isLoggedIn === 'true') {
+            authButton.innerText = 'Sign Out';
+            authButton.addEventListener('click', function() {
+                window.location.href = '/logout';
+            });
+          } else {
+            authButton.addEventListener('click', function() {
+                window.location.href = 'http://127.0.0.1:5000/login';
+            });
+          }
+        });
+    </script>
+  </body>
+</html>
