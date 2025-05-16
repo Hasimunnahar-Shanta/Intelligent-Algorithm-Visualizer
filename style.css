@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e5e5ff, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  /* Container */
+  .container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 1500px;
+    height: 900px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #112994;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 350px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    transition: border-color 0.3s;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #051074;
+  }
+  
+  /* Sections */
+  .fetch-section,
+  .recommend-section,
+  .result-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  /* Inputs */
+  input[type="text"],
+  select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #2e8b57;
+  }
+  
+  /* Buttons */
+  button {
+    background: #3915da;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background: #9c0f89;
+    transform: scale(1.03);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    textarea {
+      height: 120px;
+    }
+  }
+  

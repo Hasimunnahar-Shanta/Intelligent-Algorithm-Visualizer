@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BFS & DFS Visualizer</title>
+  <link rel="stylesheet" href="graph.css" />
+  <link rel="stylesheet" href="../navbar.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main App Container -->
+  <div id="app">
+    <!-- Visualization Area -->
+    <div id="visualizer">
+      <!-- Controls -->
+      <div class="controls">
+        <select id="graph-type">
+          <option value="random">Random Graph</option>
+          <option value="custom">Custom Graph</option>
+        </select>
+        <input type="number" id="num-nodes" placeholder="# Nodes" min="1" style="display:none;" />
+        <input type="number" id="num-edges" placeholder="# Edges" min="0" style="display:none;" />
+        <button id="generate-btn">Generate Graph</button>
+        <div id="edge-inputs"$1 style="display:none;"></div>
+        <button id="add-edges-btn"$1 style="display:none;">Add Edges</button>
+
+        <label for="algo-select">Algorithm:</label>
+        <select id="algo-select">
+          <option value="bfs">BFS</option>
+          <option value="dfs">DFS</option>
+        </select>
+
+        <input type="number" id="start-node" placeholder="Start Node" min="1" />
+        <label for="speedInput">Speed (ms):</label>
+        <input type="number" id="speed-input" placeholder="Speed (ms)" value="300" />
+
+        <button id="play-btn">Play</button>
+        <button id="pause-btn" disabled>Pause</button>
+        <button id="back-btn" disabled>Back</button>
+        <button id="forward-btn" disabled>Forward</button>
+      </div>
+
+      <!-- Graph Canvas -->
+      <div id="graph-container">
+        <svg id="graph-canvas"></svg>
+      </div>
+    </div>
+
+    <!-- Steps Log -->
+    <div id="steps-log"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="graph.js"></script>
+  <script>
+    fetch("../navbar.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+      });
+  </script>
+</body>
+</html>
