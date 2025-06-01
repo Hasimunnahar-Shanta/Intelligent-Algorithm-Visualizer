@@ -21,7 +21,7 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 - **Breadth-First Search (BFS)**
 
 ### ⭐ **Pathfinding Algorithms**
-- **A* Search Algorithm**
+- **A** Search Algorithm**
 - **Dijkstra's Algorithm**
 
 ### ♟️ **Backtracking Algorithms**
@@ -67,9 +67,9 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 ## ⚙️ Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript  
-- **Backend (Optional)**: Python / Node.js  
-- **AI Recommender**: Rule-based or trained logic  
-- **Storage**: Local data or basic database for user records
+- **Backend (Optional)**: Python
+- **AI Recommender**: Trained logic  
+- **Storage**: Local data
 
 ---
 ## 👩‍💻 Authors
