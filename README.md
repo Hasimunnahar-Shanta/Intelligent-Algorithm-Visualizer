@@ -4,25 +4,38 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 
 ---
 
-## Features
+## 🚀 Features
 
-- 🔎 **Search Algorithms**  
-  Visualizes Linear Search and Binary Search with index tracking and comparison steps.
+### 🔎 **Searching Algorithms**
+- **Linear Search**
+- **Binary Search**
 
-- 📊 **Sorting Algorithms**  
-  Includes Bubble Sort with animated comparisons and swap tracking.
+### 📊 **Sorting Algorithms**
+- **Bubble Sort**
+- **Insertion Sort**
+- **Quick Sort**
+- **Merge Sort**
 
-- 🧠 **AI-Powered Recommender**  
-  Takes user-defined problems and recommends the most suitable algorithm based on type and complexity.
+### 🌐 **Graph & Traversal Algorithms**
+- **Depth-First Search (DFS)**
+- **Breadth-First Search (BFS)**
 
-- 🌐 **Graph Algorithms**  
-  Visualizes DFS and BFS using node-by-node traversal in graph structures.
+### ⭐ **Pathfinding Algorithms**
+- **A* Search Algorithm**
+- **Dijkstra's Algorithm**
 
-- ⭐ **Pathfinding Algorithm**  
-  A* search algorithm visualized in a 2D grid with cost updates and shortest path finding.
+### ♟️ **Backtracking Algorithms**
+- **N-Queens Problem**
+- **Maze Solver**
 
-- ♟️ **Backtracking**  
-  Solves the N-Queens problem with recursive placement and backtracking steps.
+### 🧠 **AI-Powered Recommender**
+- Accepts user-defined problem statements and complexity constraints  
+- Recommends the most suitable algorithm (e.g., A* for pathfinding, Merge Sort for large unsorted arrays)  
+- Displays reasoning behind the suggestion
+
+### 🧩 **Miscellaneous Algorithms**
+- **Graph Coloring**  
+  Colors vertices of a graph so that no two adjacent nodes share the same color using greedy/backtracking techniques.
 
 ---
 
