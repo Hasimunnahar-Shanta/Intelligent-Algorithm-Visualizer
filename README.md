@@ -21,7 +21,7 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 - **Breadth-First Search (BFS)**
 
 ### ⭐ **Pathfinding Algorithms**
-- **A** Search Algorithm**
+- **A * Search Algorithm**
 - **Dijkstra's Algorithm**
 
 ### ♟️ **Backtracking Algorithms**
@@ -79,7 +79,8 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 - Hasimunnahar Shanta — 221002585
 
 **Course**: Integrated Design Project II (CSE-406)  
-**Instructor**: Md. Ataullha Saim
+**Instructor**: Md. Ataullha Saim 
+---
 **University**: Green University of Bangladesh
 
 ---
