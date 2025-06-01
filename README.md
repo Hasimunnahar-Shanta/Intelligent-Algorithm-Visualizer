@@ -4,7 +4,7 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🔎 **Search Algorithms**  
   Visualizes Linear Search and Binary Search with index tracking and comparison steps.
@@ -59,23 +59,6 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 - **Storage**: Local data or basic database for user records
 
 ---
-
-## 📂 Project Structure
-
-/intelligent-algorithm-visualizer
-├── index.html
-├── styles/
-│ └── main.css
-├── scripts/
-│ ├── visualizer.js
-│ ├── recommender.js
-│ └── utils.js
-├── assets/
-│ └── icons, images
-├── README.md
-
----
-
 ## 👩‍💻 Authors
 
 - Md Nahid Hasan — 221002339  
@@ -83,7 +66,7 @@ An interactive web-based platform to visualize popular algorithms with step-by-s
 - Hasimunnahar Shanta — 221002585
 
 **Course**: Integrated Design Project II (CSE-406)  
-**Instructor**: Md. Ataullha  
+**Instructor**: Md. Ataullha Saim
 **University**: Green University of Bangladesh
 
 ---
